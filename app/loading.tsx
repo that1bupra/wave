@@ -10,6 +10,7 @@ export default function Loading() {
         background: "var(--wave-bg)",
       }}
     >
+      {/* Spinning loader */}
       <div
         style={{
           width: "60px",
@@ -21,16 +22,19 @@ export default function Loading() {
         }}
       />
 
+      {/* Loading text */}
       <p
         style={{
           marginTop: "20px",
           color: "var(--wave-blue-dark)",
           fontSize: "1.2rem",
+          fontWeight: "500",
         }}
       >
         Loading Wave...
       </p>
 
+      {/* Animation keyframes */}
       <style>{`
         @keyframes spin {
           0% { transform: rotate(0deg); }
