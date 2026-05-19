@@ -1,4 +1,12 @@
-export default function Home() {
+export const dynamic = "force-dynamic";
+
+async function wait(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+export default async function Home() {
+  await wait(2000); // TEMPORARY: lets you SEE the loading screen
+
   return (
     <main
       style={{
